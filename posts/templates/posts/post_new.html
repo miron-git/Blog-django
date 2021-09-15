@@ -1,0 +1,15 @@
+{% extends "posts/base.html" %} 
+{% block title %}{% if not post %} Добавить запись {% else %} Редактировать запись {% endif %}{% endblock %}
+{% block content %}
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_ul }}
+        {% if not post %}
+        <input type="submit" value="Добавить запись">
+        {% else %}
+        <input type="submit" value="Редактировать запись">
+        {% endif %}
+    </form>
+
+{% endblock %} 
+
