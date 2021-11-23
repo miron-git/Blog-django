@@ -137,8 +137,7 @@ def profile_unfollow(request, username):
 
 
 def page_not_found(request, exception):
-    # Переменная exception содержит отладочную информацию, 
-    # выводить её в шаблон пользовательской страницы 404 мы не станем
+    # Переменная exception содержит отладочную информацию
     return render(request, "misc/404.html", {"path": request.path}, status=404)
 
 
