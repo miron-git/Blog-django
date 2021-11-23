@@ -15,7 +15,7 @@ from .forms import CreationForm
 
 class SignUp(CreateView):
     form_class = CreationForm #из какого класса взять форму
-    success_url = reverse_lazy("login") #  где login — это параметр "name" в path() куда переадресовать пользователя после успешной отправки формы
-    template_name = "posts/signup.html" # имя шаблона, куда будет передана переменная form с объектом HTML-формы. Всё это чем-то похоже на вызов функции render() во view-функции
+    success_url = reverse_lazy("signup") #  где login — это параметр "name" в path() куда переадресовать пользователя после успешной отправки формы
+    template_name = "users/signup.html" # имя шаблона, куда будет передана переменная form с объектом HTML-формы. Всё это чем-то похоже на вызов функции render() во view-функции
 
 

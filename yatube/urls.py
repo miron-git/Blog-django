@@ -26,6 +26,7 @@ urlpatterns = [
 
     # flatpage
     path('about/', include('django.contrib.flatpages.urls')),
+    path('accounts/profile/', include('posts.urls')),
 
     
 ]

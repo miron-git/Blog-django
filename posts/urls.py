@@ -5,7 +5,7 @@ from . import views
 urlpatterns = [
     path("", views.index, name="index"),
     #профайл пользователя
-    path('profile/<str:username>/', views.profile, name='profile'),
+    path('accounts/profile/<str:username>/', views.profile, name='profile'),
     path("group/<slug>", views.group_post, name='group'),
     path("new", views.new_post, name="new_post"),
     #просмотр записи

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{% block title %}Yatube{% endblock %} | Yatube</title>
+    <title>{% block title %}Django site{% endblock %} | Django</title>
     <!-- Загрузка статики -->
     {% load static %}
     <link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap.min.css' %}">
@@ -15,7 +15,7 @@
     {% include 'users/nav.html' %}
     <main>
         <div class="container">
-            <h1>{% block header %}Yatube{% endblock %}</h1>
+            <h1>{% block header %}Django site{% endblock %}</h1>
             {% block content %}
             <!-- Содержимое страницы -->
             {% endblock %}
